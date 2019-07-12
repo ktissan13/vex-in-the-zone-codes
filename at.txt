@@ -1,0 +1,338 @@
+// Sensor(s) detected, nice!
+// Integeated Encoder Module(s) detected, sweet!
+// Begin recording in:  3 . . . . 2 . . . . 1 . . . . 
+// BEGIN AUTONOMOUS RECORDING
+/*<<<<---- START COPY ----------------------------------------------------------------------*/
+int R_Freq = 150;
+int R_Batt = 7978;
+int P_Freq = R_Freq * (R_Batt / nImmediateBatteryLevel)
+// Initial values for Sensors:  
+// Initial values for IMEs: port 3 = 0  port 9 = 0   
+wait1Msec( P_Freq * 1 );		// wait 150
+ 
+// 150  Sensors: no change  IMEs: no change   
+motor[ port1 ] = 120; 
+motor[ port2 ] = 127; 
+motor[ port3 ] = 127; 
+motor[ port8 ] = 127; 
+motor[ port9 ] = 127; 
+wait1Msec( P_Freq * 3 );		// wait 450
+ 
+// 600  Sensors: no change  IMEs: no change   
+motor[ port8 ] = 120; 
+motor[ port9 ] = 120; 
+wait1Msec( P_Freq * 1 );		// wait 150
+ 
+// 750  Sensors: no change  IMEs: no change   
+motor[ port2 ] = 19; 
+motor[ port3 ] = 19; 
+motor[ port4 ] = -120; 
+motor[ port5 ] = -120; 
+motor[ port8 ] = 1; 
+motor[ port9 ] = 1; 
+wait1Msec( P_Freq * 1 );		// wait 150
+ 
+// 900  Sensors: no change  IMEs: no change   
+motor[ port6 ] = 127; 
+motor[ port7 ] = 127; 
+wait1Msec( P_Freq * 1 );		// wait 150
+ 
+// 1050  Sensors: no change  IMEs: no change   
+motor[ port4 ] = 0; 
+motor[ port5 ] = 0; 
+wait1Msec( P_Freq * 5 );		// wait 750
+ 
+// 1800  Sensors: no change  IMEs: no change   
+motor[ port2 ] = 120; 
+motor[ port3 ] = 120; 
+motor[ port6 ] = 0; 
+motor[ port7 ] = 0; 
+motor[ port8 ] = 123; 
+motor[ port9 ] = 123; 
+wait1Msec( P_Freq * 1 );		// wait 150
+ 
+// 1950  Sensors: no change  IMEs: no change   
+motor[ port2 ] = 127; 
+motor[ port3 ] = 127; 
+motor[ port8 ] = 127; 
+motor[ port9 ] = 127; 
+wait1Msec( P_Freq * 3 );		// wait 450
+ 
+// 2400  Sensors: no change  IMEs: no change   
+motor[ port2 ] = 8; 
+motor[ port3 ] = 8; 
+motor[ port8 ] = 1; 
+motor[ port9 ] = 1; 
+wait1Msec( P_Freq * 1 );		// wait 150
+ 
+// 2550  Sensors: no change  IMEs: no change   
+motor[ port6 ] = -127; 
+motor[ port7 ] = -127; 
+wait1Msec( P_Freq * 1 );		// wait 150
+ 
+// 2700  Sensors: no change  IMEs: no change   
+motor[ port8 ] = -5; 
+motor[ port9 ] = -5; 
+wait1Msec( P_Freq * 1 );		// wait 150
+ 
+// 2850  Sensors: no change  IMEs: no change   
+motor[ port8 ] = 1; 
+motor[ port9 ] = 1; 
+wait1Msec( P_Freq * 2 );		// wait 300
+ 
+// 3150  Sensors: no change  IMEs: no change   
+motor[ port2 ] = -4; 
+motor[ port3 ] = -4; 
+motor[ port8 ] = -56; 
+motor[ port9 ] = -56; 
+wait1Msec( P_Freq * 1 );		// wait 150
+ 
+// 3300  Sensors: no change  IMEs: no change   
+motor[ port2 ] = -113; 
+motor[ port3 ] = -113; 
+motor[ port8 ] = -127; 
+motor[ port9 ] = -127; 
+wait1Msec( P_Freq * 1 );		// wait 150
+ 
+// 3450  Sensors: no change  IMEs: no change   
+motor[ port4 ] = 120; 
+motor[ port5 ] = 120; 
+wait1Msec( P_Freq * 1 );		// wait 150
+ 
+// 3600  Sensors: no change  IMEs: no change   
+motor[ port6 ] = 0; 
+motor[ port7 ] = 0; 
+wait1Msec( P_Freq * 1 );		// wait 150
+ 
+// 3750  Sensors: no change  IMEs: no change   
+motor[ port4 ] = 0; 
+motor[ port5 ] = 0; 
+wait1Msec( P_Freq * 3 );		// wait 450
+ 
+// 4200  Sensors: no change  IMEs: no change   
+motor[ port4 ] = 120; 
+motor[ port5 ] = 120; 
+wait1Msec( P_Freq * 2 );		// wait 300
+ 
+// 4500  Sensors: no change  IMEs: no change   
+motor[ port4 ] = 0; 
+motor[ port5 ] = 0; 
+wait1Msec( P_Freq * 3 );		// wait 450
+ 
+// 4950  Sensors: no change  IMEs: no change   
+motor[ port2 ] = -67; 
+motor[ port3 ] = -67; 
+wait1Msec( P_Freq * 1 );		// wait 150
+ 
+// 5100  Sensors: no change  IMEs: no change   
+motor[ port2 ] = 119; 
+motor[ port3 ] = 119; 
+wait1Msec( P_Freq * 1 );		// wait 150
+ 
+// 5250  Sensors: no change  IMEs: no change   
+motor[ port1 ] = 12; 
+motor[ port2 ] = 127; 
+motor[ port3 ] = 127; 
+wait1Msec( P_Freq * 2 );		// wait 300
+ 
+// 5550  Sensors: no change  IMEs: no change   
+motor[ port1 ] = -120; 
+wait1Msec( P_Freq * 1 );		// wait 150
+ 
+// 5700  Sensors: no change  IMEs: no change   
+motor[ port1 ] = 12; 
+motor[ port2 ] = 39; 
+motor[ port3 ] = 39; 
+wait1Msec( P_Freq * 1 );		// wait 150
+ 
+// 5850  Sensors: no change  IMEs: no change   
+motor[ port2 ] = 14; 
+motor[ port3 ] = 14; 
+motor[ port8 ] = 1; 
+motor[ port9 ] = 1; 
+wait1Msec( P_Freq * 2 );		// wait 300
+ 
+// 6150  Sensors: no change  IMEs: no change   
+motor[ port4 ] = -120; 
+motor[ port5 ] = -120; 
+wait1Msec( P_Freq * 1 );		// wait 150
+ 
+// 6300  Sensors: no change  IMEs: no change   
+motor[ port2 ] = 37; 
+motor[ port3 ] = 37; 
+motor[ port4 ] = 0; 
+motor[ port5 ] = 0; 
+motor[ port8 ] = 23; 
+motor[ port9 ] = 23; 
+wait1Msec( P_Freq * 1 );		// wait 150
+ 
+// 6450  Sensors: no change  IMEs: no change   
+motor[ port2 ] = 127; 
+motor[ port3 ] = 127; 
+motor[ port8 ] = 127; 
+motor[ port9 ] = 127; 
+wait1Msec( P_Freq * 1 );		// wait 150
+ 
+// 6600  Sensors: no change  IMEs: no change   
+motor[ port4 ] = -120; 
+motor[ port5 ] = -120; 
+wait1Msec( P_Freq * 3 );		// wait 450
+ 
+// 7050  Sensors: no change  IMEs: no change   
+motor[ port4 ] = 0; 
+motor[ port5 ] = 0; 
+wait1Msec( P_Freq * 2 );		// wait 300
+ 
+// 7350  Sensors: no change  IMEs: no change   
+motor[ port2 ] = 10; 
+motor[ port3 ] = 10; 
+motor[ port8 ] = 1; 
+motor[ port9 ] = 1; 
+wait1Msec( P_Freq * 1 );		// wait 150
+ 
+// 7500  Sensors: no change  IMEs: no change   
+motor[ port2 ] = 70; 
+motor[ port3 ] = 70; 
+wait1Msec( P_Freq * 1 );		// wait 150
+ 
+// 7650  Sensors: no change  IMEs: no change   
+motor[ port2 ] = 83; 
+motor[ port3 ] = 83; 
+motor[ port8 ] = -10; 
+motor[ port9 ] = -10; 
+wait1Msec( P_Freq * 1 );		// wait 150
+ 
+// 7800  Sensors: no change  IMEs: no change   
+motor[ port8 ] = 19; 
+motor[ port9 ] = 19; 
+wait1Msec( P_Freq * 1 );		// wait 150
+ 
+// 7950  Sensors: no change  IMEs: no change   
+motor[ port2 ] = 10; 
+motor[ port3 ] = 10; 
+motor[ port8 ] = 23; 
+motor[ port9 ] = 23; 
+wait1Msec( P_Freq * 1 );		// wait 150
+ 
+// 8100  Sensors: no change  IMEs: no change   
+motor[ port2 ] = 127; 
+motor[ port3 ] = 127; 
+motor[ port8 ] = 127; 
+motor[ port9 ] = 127; 
+wait1Msec( P_Freq * 1 );		// wait 150
+ 
+// 8250  Sensors: no change  IMEs: no change   
+motor[ port2 ] = 7; 
+motor[ port3 ] = 7; 
+motor[ port6 ] = 127; 
+motor[ port7 ] = 127; 
+motor[ port8 ] = 1; 
+motor[ port9 ] = 1; 
+wait1Msec( P_Freq * 5 );		// wait 750
+ 
+// 9000  Sensors: no change  IMEs: no change   
+motor[ port2 ] = 74; 
+motor[ port3 ] = 74; 
+motor[ port6 ] = 0; 
+motor[ port7 ] = 0; 
+wait1Msec( P_Freq * 1 );		// wait 150
+ 
+// 9150  Sensors: no change  IMEs: no change   
+motor[ port2 ] = 127; 
+motor[ port3 ] = 127; 
+wait1Msec( P_Freq * 1 );		// wait 150
+ 
+// 9300  Sensors: no change  IMEs: no change   
+motor[ port2 ] = 18; 
+motor[ port3 ] = 18; 
+motor[ port8 ] = 10; 
+motor[ port9 ] = 10; 
+wait1Msec( P_Freq * 1 );		// wait 150
+ 
+// 9450  Sensors: no change  IMEs: no change   
+motor[ port2 ] = 91; 
+motor[ port3 ] = 91; 
+motor[ port8 ] = 115; 
+motor[ port9 ] = 115; 
+wait1Msec( P_Freq * 1 );		// wait 150
+ 
+// 9600  Sensors: no change  IMEs: no change   
+motor[ port2 ] = 127; 
+motor[ port3 ] = 127; 
+motor[ port8 ] = 80; 
+motor[ port9 ] = 80; 
+wait1Msec( P_Freq * 1 );		// wait 150
+ 
+// 9750  Sensors: no change  IMEs: no change   
+motor[ port2 ] = 18; 
+motor[ port3 ] = 18; 
+motor[ port8 ] = 1; 
+motor[ port9 ] = 1; 
+wait1Msec( P_Freq * 3 );		// wait 450
+ 
+// 10200  Sensors: no change  IMEs: no change   
+motor[ port2 ] = 127; 
+motor[ port3 ] = 127; 
+motor[ port8 ] = 127; 
+motor[ port9 ] = 127; 
+wait1Msec( P_Freq * 2 );		// wait 300
+ 
+// 10500  Sensors: no change  IMEs: no change   
+motor[ port2 ] = 12; 
+motor[ port3 ] = 12; 
+motor[ port8 ] = -5; 
+motor[ port9 ] = -5; 
+wait1Msec( P_Freq * 1 );		// wait 150
+ 
+// 10650  Sensors: no change  IMEs: no change   
+motor[ port2 ] = -118; 
+motor[ port3 ] = -118; 
+motor[ port8 ] = -127; 
+motor[ port9 ] = -127; 
+wait1Msec( P_Freq * 3 );		// wait 450
+ 
+// 11100  Sensors: no change  IMEs: no change   
+motor[ port2 ] = 1; 
+motor[ port3 ] = 1; 
+motor[ port6 ] = -127; 
+motor[ port7 ] = -127; 
+motor[ port8 ] = 40; 
+motor[ port9 ] = 40; 
+wait1Msec( P_Freq * 1 );		// wait 150
+ 
+// 11250  Sensors: no change  IMEs: no change   
+motor[ port8 ] = 1; 
+motor[ port9 ] = 1; 
+wait1Msec( P_Freq * 1 );		// wait 150
+ 
+// 11400  Sensors: no change  IMEs: no change   
+motor[ port2 ] = 7; 
+motor[ port3 ] = 7; 
+wait1Msec( P_Freq * 1 );		// wait 150
+ 
+// 11550  Sensors: no change  IMEs: no change   
+motor[ port2 ] = -83; 
+motor[ port3 ] = -83; 
+motor[ port6 ] = 0; 
+motor[ port7 ] = 0; 
+motor[ port8 ] = -127; 
+motor[ port9 ] = -127; 
+wait1Msec( P_Freq * 1 );		// wait 150
+ 
+// 11700  Sensors: no change  IMEs: no change   
+motor[ port2 ] = -123; 
+motor[ port3 ] = -123; 
+wait1Msec( P_Freq * 3 );		// wait 450
+ 
+// 12150  Sensors: no change  IMEs: no change   
+motor[ port2 ] = 29; 
+motor[ port3 ] = 29; 
+motor[ port8 ] = -107; 
+motor[ port9 ] = -107; 
+wait1Msec( P_Freq * 1 );		// wait 150
+ 
+// 12300  Sensors: no change  IMEs: no change   
+motor[ port2 ] = 12; 
+motor[ port3 ] = 12; 
+motor[ port8 ] = 1; 
+motor[ port9 ] = 1; 
